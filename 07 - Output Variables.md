@@ -1,6 +1,6 @@
 Dodaj do projektu nowy resource w postaci generatora liczb pseudolosowych. Za jego pomocą będziesz generować losową wartość trzeciego oktetu podsieci, która zostanie utworzona w ramach VPC.
 ```
-provider "randon" {}
+provider "random" {}
 
 resource "random_integer" "octet" {
   max = 255
