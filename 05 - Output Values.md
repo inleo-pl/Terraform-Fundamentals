@@ -7,7 +7,7 @@ resource "aws_internet_gateway" "igw" {
   tags = { pod = var.pod }
 }
 ```
-Wykonaj ponownie polecenie ```terraform plan``` i sprawdź wynik polecenia. Wdróżn konfigurację za pomocą ```terraform apply```. Zaleguj się do konsoli i sprawdź czy Internet Gateway jest powiązany z utworzonym VPC. Następnie skasuj całe środowisko.
+Wykonaj ponownie polecenie ```terraform plan``` i sprawdź wynik polecenia. Wdróż konfigurację za pomocą ```terraform apply```. Zaloguj się do konsoli i sprawdź czy Internet Gateway jest powiązany z utworzonym VPC. Następnie skasuj całe środowisko.
 
 Zmodyfikuj konfigurację obiektu ```igw```
 
