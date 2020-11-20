@@ -35,7 +35,7 @@ output "vpc_subnet" {
 }
 
 resource "aws_key_pair" "ec2key" {
-  key_name = "publicKey"
+  key_name = "publicKey${random_integer.octet.result}"
   public_key = file("~/.ssh/TerraformLab.pub")
   tags = { pod = var.pod }
 }
